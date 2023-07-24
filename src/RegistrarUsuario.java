@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RegistrarUsuario {
-    private JPanel rootPanel;
+   JPanel rootPanel;
     private JTextField usuario;
     private JPasswordField clave;
     private JLabel Nombre;
@@ -47,13 +47,5 @@ public class RegistrarUsuario {
             e.printStackTrace();
             JOptionPane.showMessageDialog(rootPanel, "Error al guardar el usuario.", "Error", JOptionPane.ERROR_MESSAGE);
         }
-    }
-
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("Registrar Usuario");
-        frame.setContentPane(new RegistrarUsuario().rootPanel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
     }
 }
